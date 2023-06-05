@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
 
 """
-This module defines a function for concatenating two strings.
+This module defines a function for calculating the floor of a float.
 """
 
 
-def concat(str1: str, str2: str) -> str:
+import math
+
+
+def floor(n: float) -> int:
     """
-    Concatenates two strings and returns the result.
+    Calculates the floor of a float and returns the result as an integer.
 
     Args:
-        str1: The first string.
-        str2: The second string.
+        n: The float number.
 
     Returns:
-        The concatenated string of `str1` and `str2`.
+        The floor of the input float `n`, as an integer.
     """
-    return str1 + str2
+    return math.floor(n)
