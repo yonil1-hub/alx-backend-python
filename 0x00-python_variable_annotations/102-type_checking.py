@@ -26,7 +26,7 @@ def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> Tuple[int, ...]:
         item for item in lst
         for i in range(factor)
     ]
-    return tuple(zoomed_in)
+    return zoomed_in
 
 array: Tuple[int, ...] = (12, 72, 91)
 
