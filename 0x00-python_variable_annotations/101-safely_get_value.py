@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 """
-This module provides a function for safely retrieving a value from a dictionary.
+This module provides a function for safely retrieving a value from a
+dictionary.
 """
 
 from typing import Any, Mapping, TypeVar, Union
@@ -24,7 +25,8 @@ def safely_get_value(dct: Mapping, key: Any,
 
     Returns:
         Union[Any, T]:
-            The value associated with the key if it exists, otherwise the default value.
+            The value associated with the key if it exists,
+            otherwise the default value.
     """
     if key in dct:
         return dct[key]
